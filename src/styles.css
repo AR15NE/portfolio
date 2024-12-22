@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #D6C9C1;
+}
+
+.masthead {
+  background-color: #D6C9C1;
+}
+
+.content p, .content ul, .content ul li {
+  color: #333; /* Assuming this is the color used for paragraphs */
+  font-family: Arial, sans-serif; /* Match the font family */
+  font-size: 16px; /* Match the font size if necessary */
+  line-height: 1.5; /* Ensure line height is consistent */
+}
+
+.content ul {
+  list-style-type: disc; /* Ensures list items are properly styled */
+  padding-left: 20px; /* Adds padding to the left of the list */
+}
+
+.content ul li {
+  margin-bottom: 10px; /* Adds space between list items */
+}
+
+.container {
+  max-width: min(96%, 1140px);
+  margin: 0 auto;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  width: 120px;
+  height: auto; /* Maintains the aspect ratio */
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333333; /* So the text appears clearly on the light colored nav menu color */
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #87788F; /* To help the user identify what nav item that are on*/
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
+}
