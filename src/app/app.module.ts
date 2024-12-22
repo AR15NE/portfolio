@@ -7,18 +7,9 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-import { NotFoundComponent } from './not-found/not-found.component';  // Import NotFoundComponent
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LandingPageComponent,
-    ResumeComponent,
-    AboutComponent,
-    ProjectsComponent,
-    ContactComponent,
-    NotFoundComponent  // Declare NotFoundComponent
-  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
@@ -27,8 +18,15 @@ import { NotFoundComponent } from './not-found/not-found.component';  // Import 
       { path: 'about', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'contact', component: ContactComponent },
-      { path: '**', component: NotFoundComponent }  // Route to NotFoundComponent
-    ])
+      { path: '**', component: NotFoundComponent }  // Route to NotFoundComponent 404 page
+    ]),
+    AppComponent,          // Import standalone component
+    LandingPageComponent,
+    ResumeComponent,
+    AboutComponent,
+    ProjectsComponent,
+    ContactComponent,
+    NotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

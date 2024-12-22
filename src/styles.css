@@ -7,9 +7,9 @@ body {
 }
 
 .content p, .content ul, .content ul li {
-  color: #333; /* Assuming this is the color used for paragraphs */
-  font-family: Arial, sans-serif; /* Match the font family */
-  font-size: 16px; /* Match the font size if necessary */
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.5; /* Ensure line height is consistent */
 }
 
@@ -35,7 +35,7 @@ body {
 
 .nav-logo {
   width: 120px;
-  height: auto; /* Maintains the aspect ratio */
+  height: auto; 
   position: relative;
   top: 0;
   left: 0;

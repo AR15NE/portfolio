@@ -41,8 +41,8 @@ a:hover {
   display: flex;
   justify-content: center;
   margin: 0 auto 60px auto; /* Add margin to bottom */
-  width: 80%; /* Adjust width as needed */
-  max-width: 700px; /* Optional: limit max width */
+  width: 80%;
+  max-width: 700px; 
 }
 
 .resume-container iframe {
